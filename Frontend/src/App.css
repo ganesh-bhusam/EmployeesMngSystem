@@ -1,0 +1,155 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: orange; /* Change all text color to orange */
+  background-image: url('/public/background.webp'); /* Fixing path */
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Headings */
+h2, .employee-form-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: orange; /* Orange color for all headings */
+  margin-bottom: 20px;
+}
+
+/* Employee List Styles */
+.employee-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.employee-list-table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  background-color: orange; /* Change background of table to orange */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.employee-list-table th,
+.employee-list-table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: orange; /* Change text inside table to orange */
+}
+
+.employee-list-table th {
+  background-color: #ff8c00; /* Darker orange for contrast */
+  color: white;
+}
+
+.employee-list-table td {
+  border-top: 1px solid #f1f1f1;
+}
+
+.employee-list-table td button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.employee-list-table td button.btn-warning {
+  background-color: orange;
+  color: white;
+}
+
+.employee-list-table td button.btn-danger {
+  background-color: #ff5722;
+  color: white;
+}
+
+.employee-list-table td button:hover {
+  opacity: 0.8;
+}
+
+/* Employee Form Styles */
+.employee-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.employee-form-paper {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff3e0; /* Light orange background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form-field input {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  border: 1px solid orange;
+  border-radius: 4px;
+  font-size: 16px;
+  color: orange;
+}
+
+.employee-form-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.employee-form-button:hover {
+  background-color: #ff8c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .employee-form-paper {
+    width: 90%;
+  }
+
+  .employee-list-table th,
+  .employee-list-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .employee-form-field input {
+    padding: 10px;
+  }
+
+  .employee-list-table th,
+  .employee-list-table td {
+    font-size: 12px;
+  }
+
+  .employee-list-table td button {
+    padding: 6px 10px;
+  }
+}
